@@ -1,0 +1,28 @@
+
+
+
+.item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    border: solid 1px rgb(187, 186, 186);
+    background-color: #e0e0e04d;
+    box-shadow: 1px 1px 1px 1px #e0e0e0d8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.info_p {
+    display: flex;
+}
+
+.info_item {
+    display: inline-block;
+    padding: 10px;
+}

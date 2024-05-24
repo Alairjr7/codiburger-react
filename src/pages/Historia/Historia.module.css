@@ -1,0 +1,213 @@
+header {
+
+    height: calc(100vh - 150px);
+    background: no-repeat center /cover url('image/miha-rekar-ISVtBKNhJ2g-unsplash.jpg');
+    background-position: bottom center;
+    background-color: #F47A00;
+}
+
+.text_header {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    margin: 180px auto;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin: auto;
+    align-items: center;
+
+}
+
+.header_container a {
+
+    width: 55px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: #F47A00;
+
+}
+
+.header_container a:hover {
+    cursor: pointer;
+    background-color: #f47a00d5;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 4.5em;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F47A00;
+
+}
+
+header p {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+.historia_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 7% auto auto auto;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.historia_position {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.historia_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px outset #F47A00;
+}
+
+.historia_img img {
+
+    margin: auto;
+    width: 100%;
+}
+
+.historia_text {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-left: 10px;
+    height: auto;
+
+}
+
+.historia_text h2 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F47A00;
+}
+
+.position_historia_reverse {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+
+.historia_text p {
+    text-indent: 12px;
+    margin: 10px;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 512px) {
+    .position-historia {
+        flex-direction: column;
+    }
+
+    .historia_text h2 {
+        font-size: 2em;
+    }
+
+    .text_header h2 {
+        font-size: 2em;
+        margin-top: 30px;
+
+    }
+
+    .text_header {
+        margin: 40px auto;
+    }
+
+
+
+    .text_header p {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+
+    header h2 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .historia_img {
+        display: flex;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: 5px outset #F47A00;
+
+    }
+
+    .historia_img img {
+
+        display: flex;
+        width: 100%;
+
+    }
+
+    .historia_position {
+        width: 100%;
+        margin: 0;
+    }
+
+    .historia_text p {
+        text-indent: 0;
+        margin: 20px 0;
+        font-size: 16px;
+        padding: 5px;
+        text-align: center;
+
+    }
+
+    .historia_text {
+        margin: 0;
+    }
+
+    #img_none {
+        display: none;
+    }
+
+    .position_historia_reverse {
+        display: flex;
+        flex-direction: column;
+    }
+}

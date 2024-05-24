@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+
+    height: calc(100vh - 150px);
+    background: #F47A00 no-repeat bottom center/cover scroll url('image/peter-boccia-gkMjf_XWTN4-unsplash.jpg');
+
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+
+}
+
+
+.header_position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 110px auto;
+
+}
+
+.header_position img {
+    width: 60%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.header_position a {
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: #F47A00;
+
+}
+
+.header_position a:hover {
+    cursor: pointer;
+    background-color: #f47a00d5;
+}
+
+.online_position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.online_position p {
+    color: white;
+    font-weight: 600;
+    margin: 0 0 0 4px;
+    padding: 0;
+    
+}
+
+.online_ball {
+    background-color: green;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid green;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.cardapio_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F47A00;
+    padding: 13px 0px;
+}
+
+
+.menu_container {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    font-size: large;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin: 6px;
+}
+
+.menu a:hover {
+    text-decoration: underline 3px solid #693501;
+}
+
+.btn_cart {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 9999;
+    border: none;
+    cursor: pointer;
+    background-color: #F47A00;
+
+}
+
+.btn_cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+}
+
+.icon_cart {
+    width: 24.38px;
+    height: 30.52px;
+    transition: .2s linear;
+    vertical-align: middle;
+}
+
+.icon_cart path {
+    fill: black;
+    transition: .2s linear;
+}
+
+.btn_cart:hover>.icon_cart {
+    transform: scale(1.2);
+}
+
+.btn_cart:hover>.icon_cart path {
+    fill: white;
+}
+
+.quantity {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 30px auto;
+    width: 70%;
+    border: solid 2px #F47A00;
+    box-shadow: 1px 1px 1px 1px #f7861598;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.cardapio h2 {
+    font-size: 2em;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #F47A00;
+}
+
+@media screen and (max-width: 512px) {
+    .cardapio {
+        width: auto;
+    }
+
+    .item {
+        width: auto;
+    }
+
+    .header_position  a {
+        width: 38%;
+        padding: 10px;
+    }
+
+    .cardapio_container {
+        padding: 5px 5px;
+    }
+
+    .menu_container{
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        cursor: grab;
+    }
+
+    .menu {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+        margin: 6px;
+    }
+  
+}
